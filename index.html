@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Test chat By Rohit Sengar</title>
+  <meta name="description" content="The chat">
+  <meta name="author" content="Rohit Sengar">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h2>Chat</h2>
+	<div id="chat-board">
+		<div id="chat-rooms">
+			<h3>Chat Rooms</h3>
+			<input type="text" name="username" value="" placeholder="enter your name" id="chatRoomName" />
+			<input type="button" value="Create Room" id="chatRoomBtn" />
+			<ul id="roomList">
+			</ul>
+		</div>
+		<div id="chat-members">
+			<h3>Chat members</h3>
+		</div>
+		<div id="chat-area">
+			<h3>Chat here</h3>
+		</div>
+	</div>
+	
+	<div id="popup">
+		<div class="overlay"></div>
+		<div class="wrapper">
+			<input type="text" name="username" value="" placeholder="enter your name" id="username" />
+			<input type="button" value="Let's chat" id="getUserBtn" />
+			<p id="err-msg"></p>
+		</div>
+	</div>
+	
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
