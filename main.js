@@ -12,7 +12,7 @@ var user={
 				return;
 			else{
 				self.username = userInput.value;
-				socket.emit("joinserver", username.name, "desktop");
+				socket.emit("joinserver", userInput.value, "desktop");
 			}
 		});
 	},
