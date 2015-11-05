@@ -43,6 +43,9 @@ var chatRoom = {
 	},
 	populate: function(list){ // populate chat room list
 		var listElem = document.getElementById("roomList");
+		while (listElem.lastChild) {
+		    listElem.removeChild(listElem.lastChild);
+		}// empty chat room list 
 		if(list.count){
 			for(var k in list.rooms){
 				var liElem = document.createElement("li");
